@@ -30,12 +30,48 @@
  </ul>
 
  <div class=search>
- <form id=search-form action=http://www.baidu.com/baidu?tn=gg5g&word=>
- <input type=text name=word id=search-word placeholder=请输入搜索内容 value>
- <button type=submit id=searchsubmit></button>
- </form>
+<FORM name="f_g2" onsubmit="return(s_2())" class="navbar-form navbar-left" role="search">
+
+        <div class="form-group">
+
+          <input  onblur="if (value ==''){value=''}" onfocus="this.select()" name="key" type="text" class="form-control" placeholder="baidu搜索">
+
+        </div>
+
+        <button type="submit" class="btn btn-default" onclick="s_2()">百度</button>
+
+      </form>
+ 
  </div>
  </div>
+<script type="text/javascript">
+
+function s_1()
+
+{window.open("http://www.google.com/search?hl=zh-CN&q="+encodeURI(f_g1.key.value));return false;};
+
+function s_2()
+
+{window.open("http://www.baidu.com/baidu?tn=gg5g&word="+encodeURI(f_g2.key.value));return false;};
+
+function s_3()
+
+{window.open("http://www.sogou.com/web?query="+encodeURI(f_g3.key.value));return false;};
+
+function s_4()
+
+{window.open("http://www.soku.com/v?keyword="+encodeURI(f_g4.key.value));return false;};
+
+function s_5()
+
+{window.open("http://cn.bing.com/search?q="+encodeURI(f_g5.key.value));return false;};
+
+function s_6()
+
+{window.open("http://image.baidu.com/i?ct=201326592&&word="+encodeURI(f_g6.key.value));return false;};
+
+</script>
+
 
 <div id=extwaiokist style=display:none v=fifea q=521039e1 c=1.918 i=10 u=0.679 s=03222202 d=1 w=false e m="BMe=" vn=9zsim></div></div><div class=box>
  <div class=cont>
